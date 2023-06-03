@@ -1,0 +1,40 @@
+/* bottom */
+.bottom {
+    padding: 0 1rem;
+    position: relative;
+    width: 100vw;
+    height: 18vh;
+    bottom: 0;
+    /* background-color: #1A2226; */
+    /* background-color: rgba(20, 23, 27, 0.8); */
+    background-color: rgba(26, 21, 27, 0.6);
+    /* opacity: 0.8; */
+    color: white;
+    display: flex;
+    padding-top: 1.2rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.icons i {
+    cursor: pointer;
+    margin:0 0.5rem ;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+#masterPlay{
+    font-size: 2.5rem;
+}
+
+#myProgressBar {
+    width: 75vw;
+    cursor: pointer;
+    height: 0.3rem;
+}

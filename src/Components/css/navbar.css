@@ -1,0 +1,141 @@
+/* Navigation Bar */
+
+
+nav::before {
+    opacity: 0.8
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgba(63, 28, 62, 0.6); */
+    background-color: rgba(26, 21, 27, 0.6);
+    color: white;
+    padding: 0 2rem;
+    position: fixed;
+    width: 100vw;
+    height: 8vh;
+    z-index: 1;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+#logo>i {
+    font-size: 1.5rem;
+}
+
+#logo>span {
+    padding-left: 0.6rem;
+    margin: auto;
+    cursor: pointer;
+}
+
+nav>ul {
+    display: flex;
+    margin-bottom: 0;
+}
+
+nav>ul>li {
+    justify-content: center;
+    margin: 1rem;
+    list-style: none;
+}
+
+li>a {
+    text-decoration: none;
+    color: white;
+}
+
+li>a:hover {
+    color: rgb(165, 187, 207);
+}
+
+.btnhover {
+    /* padding: 0.5rem;
+    border-radius: 0.4rem;
+    border:none */
+    width: 40%;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    /* margin: 20px; */
+    /* height: 55px; */
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 10%;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btnhover:hover {
+    /* color:"white"!important;
+    background: linear-gradient(270deg, rgba(33, 50, 78, 1) 0%, rgb(108 47 92) 100%);
+    border:"none"!important;
+    box-shadow: 4px 4px rgb(108 47 92); */
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.button {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+
+/* .btnhover2{
+    width: 25%;
+} */
+
+.button2 {
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+
+.searchicon{
+    display: none;
+}
+
+/* media queries */
+@media screen and (max-width:810px) {
+    #logo>span {
+        display: none;
+    }
+    .searchicon{
+        display: block;
+    }
+    #search{
+        visibility: hidden;
+    }
+    nav>ul>li {
+        margin: 0.6rem;
+    }
+
+    .togglesearch {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 7vh;
+        right: 2vw;
+        width: 20rem;
+        line-height: 3rem;
+        display: none;
+        border-radius: 0.8rem;
+    }
+
+    .playlist{
+        display: none;
+    }
+    .contact{
+        display: none;
+    }
+}
