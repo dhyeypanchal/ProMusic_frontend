@@ -111,7 +111,7 @@ function Card({ item, setmusic, isplaying, setisPlaying, playlist, iconhide, pla
         toast.success("successfully added to the playlist")
       }
     } catch (error) {
-      console.log(error);
+      // console.log(error);
       toast.error(error.message);
     }
   }

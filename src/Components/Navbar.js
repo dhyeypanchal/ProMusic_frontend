@@ -60,12 +60,11 @@ function Navbar() {
   function handleChange(e) {
     setSearch(e.target.value)
     if (location.pathname === "/playlist") {
-      console.log("playlist");
+      // console.log("playlist");
       getPlaylistSongs(e.target.value)
     }
     else if (location.pathname === "/") {
-      console.log("music");
-      console.log(e.target.value);
+      // console.log("music");
       getSongs(e.target.value)
     }
   }

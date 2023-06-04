@@ -43,7 +43,7 @@ function Audiobar({ songs, currentsong, isplaying, setisPlaying, audioElem, setC
       }
       setisPlaying(true)
       seekbar.style.width = 0;
-      console.log(index);
+      // console.log(index);
     }
   }
 
@@ -106,7 +106,6 @@ function Audiobar({ songs, currentsong, isplaying, setisPlaying, audioElem, setC
       {showhide ?
         <div className='d-flex justify-content-center'>
           <div className="bottom">
-            {/* {console.log(currentsong.progress)} */}
             <div className="range" style={{ width: "82%", height: "0.3rem", backgroundColor: "white", borderRadius: "0.2rem", textAlign: "center", cursor: "pointer" }} ref={clickRef} onClick={checkWidth}>
               <div className="seekbar" style={{ width: `${currentsong ? currentsong.progress + "%" : "0%"}`, height: "0.3rem", backgroundColor: "#cc00ff", borderRadius: "0.2rem" }} ><div></div></div>
             </div>

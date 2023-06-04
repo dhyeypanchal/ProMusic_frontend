@@ -17,18 +17,18 @@ function PlaylistMusicItems({ playlist }) {
 
 
     const setmusic = (music, playlistsongs,playlistsection) => {
-        console.log(playlistsection);
+        // console.log(playlistsection);
         if (playlistsection) {       
-            console.log("hello");
+            // console.log("hello");
             setshowhide(true)
-            setSongs(playlistsongs) //after changing this search functionality works
+            // setSongs(playlistsongs) //after changing this search functionality works
             setPlaylistSongs(playlistsongs)
             setCurrentSong(music)
         }
         else{
             setCurrentSong(music)
             setshowhide(true)
-            console.log("else");
+            // console.log("else");
         }
     }
 
@@ -99,7 +99,7 @@ function PlaylistMusicItems({ playlist }) {
             navigate("/")
         }
         // eslint-disable-next-line
-    }, [playlistsongs]) // i did change this to searchResult for working search functionality, now from songs to playlistsongs
+    }, [playlistsongs,songs]) // i did change this to searchResult for working search functionality, now from songs to playlistsongs
 
     const [isplaying, setisPlaying] = useState(false)
 
