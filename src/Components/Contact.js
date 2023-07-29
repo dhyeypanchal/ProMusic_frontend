@@ -36,7 +36,7 @@ function Contact() {
 
     return (
         <div className="d-flex align-items-center justify-content-center main">
-            <div style={{width:"80vw"}}>
+            <div style={{ width: "80%", maxWidth: "100rem" }}>
                 <div className="row">
                     <div className="col-lg-3 col-md-2"></div>
                     <div className="col-lg-6 col-md-8 login-box" style={{ borderRadius: "8px" }}>
@@ -52,11 +52,11 @@ function Contact() {
                                 <form onSubmit={handleSubmit}>
                                     <div className="form-group">
                                         <label className="form-control-label">Name</label>
-                                        <input type="text" className="form-control" id='name' value={query.name} onChange={handleChange} name="name" required autoComplete="off" />
+                                        <input type="text" className="input-control" id='name' value={query.name} onChange={handleChange} name="name" required autoComplete="off" />
                                     </div>
                                     <div className="form-group">
                                         <label className="form-control-label">Your Query</label>
-                                        <input type="text" className="form-control" id='query' value={query.query} onChange={handleChange} name="query" required autoComplete="off" />
+                                        <input type="text" className="input-control" id='query' value={query.query} onChange={handleChange} name="query" required autoComplete="off" />
                                     </div>
                                     <div className=" d-flex justify-content-center" style={{ width: "100%" }}>
                                         <button type="submit" className="loginbtnn btn-hover">SUBMIT</button>

@@ -57,7 +57,7 @@ function Signup() {
 
     return (
         <div className="d-flex align-items-center justify-content-center main">
-            <div style={{ width: "80%" }}>
+            <div style={{ width: "80%", maxWidth: "100rem" }}>
                 <div className="row">
                     <div className="col-lg-3 col-md-2"></div>
                     <div className="col-lg-6 col-md-8 login-box" style={{ borderRadius: "8px" }}>
@@ -73,17 +73,17 @@ function Signup() {
                                 <form onSubmit={handleSubmit}>
                                     <div className="form-group">
                                         <label className="form-control-label">Your Name</label>
-                                        <input type="text" className="form-control" id='name' value={credentials.name} onChange={handleChange} name="name" required autoComplete="off" />
+                                        <input type="text" className="input-control" id='name' value={credentials.name} onChange={handleChange} name="name" required autoComplete="off" />
                                     </div>
                                     <div className="form-group">
                                         <label className="form-control-label">Email</label>
-                                        <input type="email" className="form-control" id='email' value={credentials.email} onChange={handleChange} name="email" required autoComplete="off" />
+                                        <input type="email" className="input-control" id='email' value={credentials.email} onChange={handleChange} name="email" required autoComplete="off" />
                                     </div>
                                     <div className="form-group">
                                         <div className="eye">
                                             <label className="form-control-label">Password</label>
-                                            <input type="password" ref={pass} className="form-control" id='password' value={credentials.password} onChange={handleChange} name="password" required minLength={5} autoComplete="off" />
-                                            {show ? <i class="fa-solid fa-eye" id='i' onClick={showpassword} style={{ color: "#0DB8DE" }}></i> : <i class="fa-solid fa-eye-slash" id="i" onClick={showpassword} style={{ color: "#0DB8DE" }}></i>}
+                                            <input type="password" ref={pass} className="input-control" id='password' value={credentials.password} onChange={handleChange} name="password" required minLength={5} autoComplete="off" />
+                                            {show ? <i className="fa-solid fa-eye" id='i' onClick={showpassword} style={{ color: "#0DB8DE" }}></i> : <i className="fa-solid fa-eye-slash" id="i" onClick={showpassword} style={{ color: "#0DB8DE" }}></i>}
                                         </div>
                                     </div>
                                     <div className="login-btm login-button d-flex justify-content-around" style={{ width: "100%" }}>
